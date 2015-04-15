@@ -1,1 +1,593 @@
-Under construction
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Microscopic vehicular mobility trace of Europarc roundabout, Creteil, France">
+    <meta name="author" content="Frédéric Le Mouël - University of Lyon / INSA Lyon / INRIA CITI Lab / Dynamid Team">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title> Microscopic vehicular mobility trace of Europarc roundabout, Creteil, France</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link href="assets/css/animate-custom.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<div id="navbar-main">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-radio-checked" style="font-size:30px; color:#3498db;"></span>
+                </button>
+                <a class="navbar-brand hidden-xs hidden-sm" href="index.html#home"><span class="icon icon-radio-checked"
+                                                                                         style="font-size:18px; color:#3498db;"></span></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html#home" class="smoothScroll">Home</a></li>
+                    <li><a href="index.html#context" class="smoothScroll"> Context</a></li>
+                    <li><a href="index.html#dataset" class="smoothScroll"> Dataset</a></li>
+                    <li><a href="index.html#video" class="smoothScroll"> Video</a></li>
+                    <li><a href="index.html#download" class="smoothScroll"> Download</a></li>
+                    <li><a href="index.html#publications" class="smoothScroll"> Publis</a></li>
+                    <li><a href="index.html#acknowledgements" class="smoothScroll"> Acks</a></li>
+                    <li><a href="index.html#contact" class="smoothScroll"> Contact</a></li>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<!-- ==== HEADERWRAP ==== -->
+<div id="headerwrap" id="home" name="home">
+    <header class="clearfix">
+        <h1><span class="icon icon-radio-checked"></span></h1>
+
+        <p>Microscopic vehicular mobility trace</p>
+
+        <p>of Europarc roundabout, Creteil, France</p>
+
+        <h1><span class="icon icon-radio-checked"></span></h1>
+    </header>
+</div>
+<!-- /headerwrap -->
+
+<!-- ==== CONTEXT ==== -->
+<div class="container" id="context" name="context">
+    <div class="row white text-justify">
+        <br>
+
+        <h1 class="centered">CONTEXT</h1>
+        <hr>
+
+        <div class="col-lg-6">
+            <p>Understanding the dynamics of vehicles is a major issue in smart cities evolution. Impacts are
+                preponderant in user guidance, fuel consumption, pollution, but also in instrumentation efforts
+                to deploy the infrastructures of communication. Most
+                <a href="http://en.wikipedia.org/wiki/Intelligent_transportation_system">intelligent transportation
+                    systems</a>
+                concentrate on macro-mobility with centralized decisions and global optimizations for whole cities.
+                With the great development of <a href="http://en.wikipedia.org/wiki/Autonomous_car">autonomous cars</a>
+                and <a href="http://en.wikipedia.org/wiki/Vehicular_communication_systems">vehicle-to-vehicule
+                    communication
+                    systems</a>, micro-mobility is again of special importance for opportunistic data dissemination and
+                local decisions - for instance when arriving at traffic lights or when vehicles meet.<br>
+                We believe in the strong integration of the two approaches - hybrid decentralized ITS.
+            </p>
+        </div>
+        <!-- col-lg-6 -->
+
+        <div class="col-lg-6">
+            <p>Simulation tools are widely used to evaluate assumption correctness and performances of optimization
+                algorithms. Several <a href="http://kolntrace.project.citi-lab.fr">macroscopic vehicular mobility
+                    trace</a>
+                exist, but few detailed ones at the microscopic level. Most of macro traces integrate simplistic models
+                for intersections and roundabout, while the complexity of this fine-grained mobility can greatly affect
+                the global optimization. For that purpose, we propose a dataset describing a complex roundabout in
+                Creteil, France.
+            </p>
+        </div>
+        <!-- col-lg-6 -->
+
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+
+<!-- ==== SECTION DIVIDER1 -->
+<section class="section-divider textdivider divider1">
+    <div class="container">
+        <h1>ROUNDABOUT MOBILITY TRACE</h1>
+        <hr>
+        <p>#Car #Bus #Traffic #Light</p>
+    </div>
+    <!-- container -->
+</section>
+<!-- section -->
+
+<!-- ==== DATASET ==== -->
+<div class="container" id="dataset" name="dataset">
+    <div class="row white text-justify">
+        <br>
+
+        <h1 class="centered">DATASET</h1>
+        <hr>
+
+        <div class="col-lg-6">
+            <p>The vehicular mobility dataset is mainly based on the real data collected by the General Council of Val
+                de Marne (94) in France. The General Council of Val de Marne is a regional agency in charge - amongst
+                other activities - of the transportation systems.
+            </p>
+        </div>
+        <!-- col-lg-6 -->
+
+        <div class="col-lg-6">
+            <p>Different simulations tools and models are brought together to characterize and synthesize this trace:
+            <ul>
+                <li>the street layout of Creteil roundabout area is obtained from the
+                    <a href="http://www.openstreetmap.org">OpenStreetMap</a> database,
+                </li>
+                <li>the traffic demand information on the traffic flow is derived from car counting and camera video
+                    analysis,
+                </li>
+                <li>the traffic assignment of the vehicular flows is performed by Gawron’s dynamic user assignment
+                    algorithm, included in the <a href="http://www.dlr.de/ts/sumo/en">SUMO – Simulation of Urban
+                        MObility -</a> simulator.
+                </li>
+                <li>
+                    the traffic light mechanism is derived from sequence adaptation manually documented in the regional
+                    transportation system.
+                </li>
+            </ul>
+            </p>
+        </div>
+        <!-- col-lg-6 -->
+
+        <div class="col-lg-6">
+            The resulting synthetic trace includes a roundabout with 6 entrances/exits, 2 or 3-lanes roads, 1 bus road,
+            4 changing-lane spots, 15 traffic lights. It comprises around 10000 trips, over rush hour periods of two
+            hours in the morning (7AM-9AM) and two hours in the evening (5PM-7PM).
+            </p>
+        </div>
+        <!-- col-lg-6 -->
+
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+
+<!-- ==== SECTION DIVIDER2 -->
+<section class="section-divider textdivider divider2">
+    <div class="container">
+        <h1>VISUAL DESIGN</h1>
+        <hr>
+        <p>#Simulation #SUMO</p>
+    </div>
+    <!-- container -->
+</section>
+<!-- section -->
+
+<!-- ==== VIDEO ==== -->
+<div class="container" id="video" name="video">
+    <div class="row white">
+        <br>
+
+        <h1 class="centered">VIDEO</h1>
+        <hr>
+        <br>
+
+        <div class="centered">
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S6AYE_epgck" frameborder="0"
+                        allowfullscreen></iframe>
+            </p>
+        </div>
+        <!-- col-lg-6 -->
+
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+
+<!-- ==== SECTION DIVIDER3 -->
+<section class="section-divider textdivider divider3">
+    <div class="container">
+        <h1>OPEN DATA</h1>
+        <hr>
+        <p>#Flux #Sharing #Reproducibility</p>
+    </div>
+    <!-- container -->
+</section>
+<!-- section -->
+
+<!-- ==== DOWNLOAD ==== -->
+<div class="container" id="download" name="download">
+    <div class="row white text-justify">
+        <br>
+
+        <h1 class="centered">DOWNLOAD</h1>
+        <hr>
+
+        <div class="col-lg-6">
+            <p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img
+                        alt="Creative Commons License" style="border-width:0"
+                        src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/></a><br/><span
+                    xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset"
+                    property="dct:title" rel="dct:type">Microscopic vehicular mobility trace of Europarc roundabout, Creteil, France</span>
+                by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Marie-Ange Lèbre, Frédéric Le Mouël</span>
+                is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative
+                Commons Attribution-NonCommercial 4.0 International License</a>.
+            </p>
+        </div>
+        <!-- col-lg-6 -->
+
+        <div class="col-lg-6">
+            <p>
+                The trace contains in each line the time (1-second granularity), the vehicle slope (not used), the
+                vehicle lane, the vehicle angle, the vehicle type (vehicle or bus), the vehicle position, the vehicle
+                coordinates on the two-dimensional plane (x and y coordinates in meters), the vehicle speed (im meters
+                per second), and the vehicle id.<br>
+                The trace is in CVS format, zipped.
+            </p>
+        </div>
+
+        <div class="col-lg-6">
+            <p>
+                <a href="trace/vanet-trace-creteil-20130924-0700-0900.zip">
+                    <button class="btn btn-success btn-lg">Europarc Creteil Roundabout 07:00AM - 09:00AM (16M)</button>
+                </a><br><br>
+                <a href="trace/vanet-trace-creteil-20130924-1700-1900.zip">
+                    <button class="btn btn-success btn-lg">Europarc Creteil Roundabout 17:00AM - 19:00AM (16M)</button>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+
+<!-- ==== SECTION DIVIDER4 ==== -->
+<section class="section-divider textdivider divider4">
+    <div class="container">
+        <h1>ANALYSIS, CREATIVITY</h1>
+        <hr>
+        <p>#Science</p>
+    </div>
+    <!-- container -->
+</section>
+<!-- section -->
+
+<!-- ==== PUBLICATIONS ==== -->
+<div class="container" id="publications" name="publications">
+    <div class="row white text-justify">
+        <br>
+
+        <h1 class="centered">PUBLICATIONS</h1>
+        <hr>
+
+        <div class="col-lg-6">
+            <p>Reference to this dataset can be made as follows: Marie-Ange Lèbre, Frédéric Le Mouël, Eric Ménard,
+                "Microscopic vehicular mobility trace of Europarc roundabout, Creteil, France", April, 2015.</p>
+        </div>
+        <!-- col-lg-6 -->
+
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+
+<!-- ==== SECTION DIVIDER5 ==== -->
+<section class="section-divider textdivider divider5">
+    <div class="container">
+        <h1>COLLABORATIONS</h1>
+        <hr>
+        <p>#JointWork #University #Industry #Regional #Agencies</p>
+    </div>
+    <!-- container -->
+</section>
+<!-- section -->
+
+<!-- ==== ACKNOWLEDGEMENTS ==== -->
+<div class="container" id="acknowledgements" name="acknowledgements">
+    <div class="row white text-justify">
+        <br>
+
+        <h1 class="centered">ACKNOWLEDGEMENTS</h1>
+        <hr>
+
+        <div class="col-lg-6">
+            <p>This research results from a joint work between an academic partner - the University of Lyon, INSA Lyon,
+                INRIA CITI Lab, Dynamid team - and an industrial partner - the Valeo Group. Many thanks to the General
+                Council of Val de Marne for their support to the real data collecting.</p>
+        </div>
+
+        <div class="col-lg-6">
+
+            <!-- PORTFOLIO IMAGE 1 -->
+            <div class="col-md-4">
+                <div class="grid mask">
+                    <figure>
+                        <img class="img-responsive" src="assets/img/portfolio/citi.png" alt="">
+                        <figcaption>
+                            <h5>ACADEMIC</h5>
+                            <a data-toggle="modal" href="index.html#modalCITI" class="btn btn-primary btn-lg">Take a
+                                Look</a>
+                        </figcaption>
+                        <!-- /figcaption -->
+                    </figure>
+                    <!-- /figure -->
+                </div>
+                <!-- /grid-mask -->
+            </div>
+            <!-- /col -->
+
+
+            <!-- MODAL SHOW THE PORTFOLIO IMAGE 1 -->
+            <div class="modal fade" id="modalCITI" tabindex="-1" role="dialog" aria-labelledby="modalCITILabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">INRIA CITI Laboratory</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p><img class="img-responsive" src="assets/img/portfolio/citi.png" alt=""></p>
+
+                            <p>CITI is an academic laboratory associated with INSA Lyon and INRIA. The CITI Laboratory
+                                develops research activities bringing together computer science, networking, and digital
+                                communications to address the challenging issues related to the development of Internet.
+                                This world scale network offers a seamless communication path between heterogeneous
+                                nodes (persons,objects, sensors, phones,...) in an heterogeneous architecture including
+                                wireless access, offering mobility, ubiquity and adaptability.</p>
+
+                            <p><b><a href="http://www.citi-lab.fr" target="_blank">Visit CITI Lab site</a></b><br>
+                                <b><a href="http://dynamid.citi-lab.fr" target="_blank">Visit Dynamid team site</a></b>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+
+            <!-- PORTFOLIO IMAGE 2 -->
+            <div class="col-md-4">
+                <div class="grid mask">
+                    <figure>
+                        <img class="img-responsive" src="assets/img/portfolio/valeo.png" alt="">
+                        <figcaption>
+                            <h5>INDUSTRIAL</h5>
+                            <a data-toggle="modal" href="index.html#modalValeo" class="btn btn-primary btn-lg">Take a
+                                Look</a>
+                        </figcaption>
+                        <!-- /figcaption -->
+                    </figure>
+                    <!-- /figure -->
+                </div>
+                <!-- /grid-mask -->
+            </div>
+            <!-- /col -->
+
+            <!-- MODAL SHOW THE PORTFOLIO IMAGE 2 -->
+            <div class="modal fade" id="modalValeo" tabindex="-1" role="dialog" aria-labelledby="modalValeoLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Valeo Group - Advanced Technology Development</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p><img class="img-responsive" src="assets/img/portfolio/valeo.png" alt=""></p>
+
+                            <p>Independent group, Valeo is fully focused on the design, production and sale of
+                                components, integrated systems and modules for the automotive industry. Valeo is an
+                                automotive supplier, partner to all automakers worldwide. As a technology company, Valeo
+                                proposes innovative products and systems that contribute to the reduction of CO2
+                                emissions and to the development of intuitive driving.</p>
+
+                            <p><b><a href="http://www.valeo.com" target="_blank">Visit Valeo Group site</a></b><br>
+                                <b><a href="http://www.valeo.com/le-groupe/valeo-dans-le-monde.html?search=Valeo+Comfort+%26+Driving+Assistance+Systems%2C+Climate+Control+&country=&activity=&pole=#valeo-sites"
+                                      target="_blank">Visit Creteil site</a></b>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+            <!-- PORTFOLIO IMAGE 3 -->
+            <div class="col-md-4">
+                <div class="grid mask">
+                    <figure>
+                        <img class="img-responsive" src="assets/img/portfolio/val-de-marne.png" alt="">
+                        <figcaption>
+                            <h5>REGIONAL</h5>
+                            <a data-toggle="modal" href="index.html#modalValDeMarne" class="btn btn-primary btn-lg">Take
+                                a
+                                Look</a>
+                        </figcaption>
+                        <!-- /figcaption -->
+                    </figure>
+                    <!-- /figure -->
+                </div>
+                <!-- /grid-mask -->
+            </div>
+            <!-- /col -->
+
+        </div>
+        <!-- col-lg-6 -->
+
+        <!-- MODAL SHOW THE PORTFOLIO IMAGE 3 -->
+        <div class="modal fade" id="modalValDeMarne" tabindex="-1" role="dialog" aria-labelledby="modalValDeMarneLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">General Council of Val de Marne</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><img class="img-responsive" src="assets/img/portfolio/val-de-marne.png" alt=""></p>
+
+                        <p>Val-de-Marne is a department in the Central Northern part of France. Sharing its boundaries
+                            with Paris, it is defined as the close South East suburbs of the French capital. It spreads
+                            on 245 sq.kms, and is one of the most densely populated areas in France. (50009 inh./km2).
+                            Many rail and road transportation networks (underground, Regional Express Rail Network
+                            :‘RER’ ) crisscross the department, situated in the heart of the Paris Basin. In the South
+                            of the department lies Orly Airport, second national airport.<br>
+                            The major jurisdiction attributed is social action. More than half of the General Council
+                            budget is dedicated to social actions (health, childhood, family, elderly). However, the
+                            social sector is not the only duty of the council. Actually, the General Council employs
+                            6000 agents working in the fields of education, road maintenance, economic development.</p>
+
+                        <p><b><a href="http://www.valdemarne.fr/le-conseil-general" target="_blank">Visit the General
+                            Council site (fr)</a></b>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+    </div>
+    <!-- row -->
+</div>
+<!-- container -->
+
+<!-- ==== SECTION DIVIDER6 ==== -->
+<section class="section-divider textdivider divider6">
+    <div class="container">
+        <h1>CRAFTED IN LYON, FRANCE</h1>
+        <hr>
+        <br>
+        <br>
+
+        <p><a class="icon icon-earth" href="http://www.lyon.fr" target="_blank"></a> | <a class="icon icon-twitter"
+                                                                                          href="https://twitter.com/villedelyon"
+                                                                                          target="_blank"></a> | <a
+                class="icon icon-facebook" href="https://fr-fr.facebook.com/LyonFrance" target="_blank"></a>
+        </p>
+    </div>
+    <!-- container -->
+</section>
+<!-- section -->
+
+<!-- ==== CONTACT ==== -->
+<div class="container" id="contact" name="contact">
+    <br>
+
+    <div class="row white centered">
+        <h1 class="centered">MEET OUR AWESOME TEAM</h1>
+        <hr>
+        <br>
+        <br>
+
+        <div class="col-lg-3 centered">
+            <img class="img img-circle" src="assets/img/team/mlebre.jpg" height="120px" width="120px" alt="">
+            <br>
+            <h4><b>Marie-Ange Lèbre</b></h4>
+            <a href="mailto:marie-ange@insa-lyon.fr" class="icon icon-envelop"></a>
+
+            <p>PhD student, Valeo &amp; INSA Lyon</p>
+        </div>
+        <!-- col-lg-3 -->
+
+        <div class="col-lg-3 centered">
+            <img class="img img-circle" src="assets/img/team/flemouel.jpg" height="120px" width="120px" alt="">
+            <br>
+            <h4><b>Frédéric Le Mouël</b></h4>
+            <a href="mailto:frederic.le-mouel@insa-lyon.fr" class="icon icon-envelop"></a>
+            <a href="http://www.le-mouel.net" class="icon icon-earth" target="_blank"></a>
+            <a href="http://www.twitter.com/flemouel" class="icon icon-twitter" target="_blank"></a>
+
+            <p>Associate Professor, University of Lyon, INSA Lyon</p>
+        </div>
+        <!-- col-lg-3 -->
+
+    </div>
+    <!-- row -->
+
+    <div class="row">
+        <br>
+
+        <h1 class="centered">VISIT US</h1>
+        <hr>
+        <br>
+        <br>
+
+        <div class="col-lg-4">
+            <h3>Contact Information</h3>
+
+            <p><span class="icon icon-home"></span>
+                Claude Chappe Building<br>
+                6 avenue des Arts<br>
+                F-69621 Villeurbanne Cedex, France<br>
+                <span class="icon icon-phone"></span> +33 4 7243 6415<br>
+            </p>
+        </div>
+        <!-- col -->
+
+    </div>
+    <!-- row -->
+
+</div>
+<!-- container -->
+
+<div id="footerwrap">
+    <div class="container">
+        <h4>Created by <a href="http://dynamid.citi-lab.fr">Dynamid team</a> - Design by <a href="http://blacktie.co">BlackTie.co</a>
+            - Free pictures <a href="http://pixabay.com">Pixabay.com</a> - Copyright 2015</h4>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+</body>
+</html>
