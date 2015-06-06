@@ -292,11 +292,47 @@
 
         <div class="col-lg-6">
             <p>Reference to this dataset can be made as follows: Marie-Ange Lèbre, Frédéric Le Mouël, Eric Ménard,
-                "Microscopic vehicular mobility trace of Europarc roundabout, Creteil, France", April, 2015. <a
-                        href="http://dx.doi.org/10.5281/zenodo.16870"><img
-                        src="https://zenodo.org/badge/doi/10.5281/zenodo.16870.svg" alt="10.5281/zenodo.16870"></a></p>
+                "Microscopic vehicular mobility trace of Europarc roundabout, Creteil, France", April, 2015. &nbsp;
+                <a href="http://dx.doi.org/10.5281/zenodo.16870"><img
+                        src="https://zenodo.org/badge/doi/10.5281/zenodo.16870.svg" alt="10.5281/zenodo.16870"></a>
+                <a data-toggle="modal" href="index.html#modalTrace" class="btn
+                btn-primary btn-xs"><i class="icon-plus"></i></a></p>
         </div>
         <!-- col-lg-6 -->
+
+        <!-- MODAL SHOW THE BIBTEX TRACE CRETEIL -->
+        <div class="modal fade" id="modalTrace" tabindex="-1" role="dialog" aria-labelledby="modalTraceLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Creteil Roundabout Trace - Bibtex</h4>
+                    </div>
+                    <div class="modal-body">
+                        <pre>
+                            <code>
+@Misc{LebMA:MicroVMTERCF,
+author = {M.-A. L{\`e}bre and F. {Le Mou{\"e}l} and E. M{\'e}nard},
+title  = {Microscopic vehicular mobility trace of Europarc roundabout, Creteil, France},
+month  = Apr,
+year   = {2015},
+doi    = {10.5281/zenodo.16870},
+url    = {http://vehicular-mobility-trace.github.io/},
+note   = {Open data trace, v1.0, Creative Commons Attribution-NonCommercial 4.0 International License}
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
 
         <h2 class="centered">Related Articles</h2>
         <hr>
